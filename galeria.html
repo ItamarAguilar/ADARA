@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Zoom al pasar el mouse</title>
+  <style>
+    body {
+    background: #780206;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+    .contenedor-imagen {
+      width: 300px; /* puedes ajustar el tamaño */
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .contenedor-imagen img {
+      width: 100%;
+      transition: transform 0.5s ease;
+    }
+
+    .contenedor-imagen:hover img {
+      transform: scale(1.2); /* aquí el zoom */
+    }
+    .barras {
+    display: none;
+  }
+  
+  .desplegable {
+    background: #1e1e1e;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  ul li {
+    padding: 10px;
+    list-style: none;
+  }
+  
+  ul li a {
+    color: #ee9ca7;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  nav ul li:hover {
+    background: #ff5722;
+  }
+  </style>
+</head>
+<body>
+    
+      <header>
+        <div class="logo" style="text-align: center;">
+          <img src="adara.jpg" width="300" height="200" alt="ADARA">
+        </div>
+    
+        <div class="barras">
+          <button onclick="abrir_cerrar_menu()" class="boton_menu" id="x" aria-label="Abrir o cerrar menú">Menú</button>
+        </div>
+    
+        <nav id="menu" class="desplegable">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="proyecto.html">Proyectos</a></li>
+            <li><a href="contac.html">Contáctanos</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      </div>
+      <script>
+        // Función para abrir y cerrar el menú
+        function abrir_cerrar_menu() {
+          const menu = document.getElementById('menu');
+          menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+      </script>
+  <h2>Productos</h2>
+
+  <div class="contenedor-imagen">
+    <img src="base.jpeg" alt="base">
+    <img src="bronceador.jpeg" alt="base">
+    <img src="delineador.jpeg" alt="base">
+    <img src="geldecejas.jpeg" alt="base">
+    <img src="mascaradepestañas.png" alt="base">
+  </div>
+
+</body>
+</html>
+
+</body>
+<script src="main.js"></script>
+</html>
